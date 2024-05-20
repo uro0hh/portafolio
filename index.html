@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <title>Portafolio</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    
+    <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">BS</a>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()" >INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#puffle" onclick="seleccionar()">PORTAFOLIO</a></li>  
+                <li><a href="#Clima" onclick="seleccionar()">CLIMA</a></li>
+                <li><a href="#Contacto" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-responsive" onclick="mostraeOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+    </header>
+
+    </div>
+
+    <!--inicio-->
+
+    <section  class="inicio" id="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/img/Nana_-_Animado.webp" alt="">
+            </div>
+            <h1>Bárbara Alveal</h1>
+            <p>Ingeniería en informática</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--sobre mi-->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><samp></samp>Unos breve datos de mi persona y mis intereses.
+
+            </p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>๏┊Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            22-08-2003
+                        </li>
+
+                        <li>
+                            <strong>Teléfono</strong>
+                            +569 555 555
+                        </li>
+
+                        <li>
+                            <strong>Email</strong>
+                            Bar.alveal@duocuc.cl
+                        </li>
+                        <li>
+                            <strong>cumpleaños</strong>
+                            22-08-2003
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Mi casa
+                        </li>
+                    </ul>
+                </div>
+
+               <div class="col">
+                <h3>๏┊Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-chalkboard"></i>
+                        <span>Compuadores</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Juegos</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <span>Dibujar</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-brands fa-pagelines"></i>
+                        <span>Plantas</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-music"></i>
+                        <span>Música</span>
+                    </div>
+                    
+                </div>
+               </div>
+            </div>
+
+            
+        </div>
+
+            <div class="texto">
+                <h1>Eventos importantes.</h1>
+            </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/club_penguin_wallpaper_by_blacky05h1_d2yhggf-fullview.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/club_penguin_wallpaper_3_by_blacky05h1_d2yhgn8-fullview.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/waterwallpaper.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
+    
+    <!--PUFFLE-->
+
+    <section id="puffle" class="puffle">
+        <div id="contenido-seccion">
+            <h2>PORTAFOLIO DE PUFFLES</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./assets/img/puffle_amarillo.webp" alt="">
+                    <div class="overley">
+                        <h3>PUFFLE AMARILLO</h3>
+                        <p>Especialidad: Pintor</p>
+                        <p>Puede ser visto en el Teatro, al bajar la palanca amarilla del Switchbox 3000, 
+                            y es el Cuidador del Teatro.</p>
+                       
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/puffle_azul.webp" alt="">
+                    <div class="overley">
+                        <h3>PUFFLE AZUL</h3>
+                        <p>Especialidad: Ser un buen amigo</p>
+                        <p>Fueron descubiertos por primera vez en la Pista de Patinaje y eran uno de los cuatro puffles originales.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/puffle_cafe.webp" alt="">
+                    <div class="overley">
+                        <h3>PUFFLE CAFÉ</h3>
+                        <p>Especialidad: Inventor</p>
+                        <p>Fué descubierto en la Expedición a la Naturaleza. 
+                            Son los puffles más inteligentes y tienen sus propias Gafas de Protección</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/puffle_morado.webp" alt="">
+                    <div class="overley">
+                        <h3>PUFFLE MORADO</h3>
+                        <P>Especialidad: Ser fabuloso</P>
+                        <p>Fueron descubiertos en agosto del 2006. Ellos son más populares entre las adolescentes, debido a la personalidad y el amor a la danza.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/puffle_naranja.webp" alt="">
+                    <div class="overley">
+                        <h3>PUFFLE NARANJA</h3>
+                        <p>Especialidad: Payaso</p>
+                        <p>Fué descubierto el 25 de febrero del 2010 en la Fiesta de Puffles. Por alguna extraña razón, su comida favorita son los calcetines</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/puffle_negro.webp" alt="">
+                    <div class="overley">
+                        <h3>PUFFLE NEGRO</h3>
+                        <p>Especialidad: Ser enojón</p>
+                        <p>Los Puffles negros, son conocidos por su mala actitud y carácter fuerte. También son conocidos, por prenderse en fuego siempre que comen cosas picantes</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/puffle_rosa.webp" alt="">
+                    <div class="overley">
+                        <h3>PUFFLE ROSA</h3>
+                        <p>Especialidad: Deportistas</p>
+                        <p>Son conocidos por ser felices y deportistas. Les encanta hacer ejercicio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Clima-->
+
+    <section id="Clima" class="clima">
+
+        <div class="container">
+            <h1 class="text-center my-5">Conoce el clima en tu ciudad</h1>
+            
+            <!-- Formulario para ingresar la ciudad -->
+            <div class="mb-3">
+                <label for="ciudad" class="form-label">Ciudad:</label>
+                <input type="text" class="form-control" id="ciudad" placeholder="Ingresa una ciudad">
+            </div>
+            
+            <!-- Botón para obtener el pronóstico -->
+            <button class="btn btn-primary" id="obtenerPronostico">Obtener Pronóstico</button>
+            
+            <!-- Contenedor para mostrar el pronóstico -->
+            <div id="pronostico" class="mt-4"></div>
+        </div>
+
+    </section>
+
+     <!--Contacto-->
+
+     <section id="Contacto" class="contacto">
+        <div class="box-info">
+            <h1>Contactame</h1>
+            <div class="Contenido-seccion">
+                <div class="fila">
+                    <div class="col">
+                        <input type="text" placeholder="Escribe tú nombre..">
+                        <input type="text" placeholder="Número de teléfono..">
+                        <input type="text" placeholder="Correo electrónico..">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje
+                            <span class="overlay"></span>
+                        </button>
+                       
+                    </div>
+
+                <div class="col">
+                        
+                        <div class="info">
+                            <h3>Si necesitas ayuda en algún proyecto, no dudes en ponerte en contacto conmigo por aqui: </h3>
+                            <ul>
+                                <li>
+                                 <i class="fa-solid fa-phone"></i>
+                                 Mi número de teléfono: +569 555 555
+                                </li>
+
+                                <li>
+                                    <i class="fa-regular fa-envelope"></i>
+                                    Mi correo electrónico: bar.alveal@duocuc.cl
+                                </li>
+
+                                <li>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    Facebook: BárbaraAlveQl
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    Instagram:brbara
+                                </li>
+                            </ul>
+                            <img src="./assets/img/contacto.webp" alt="">
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
